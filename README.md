@@ -1,4 +1,4 @@
-// baboom
+# baboom
 
 (explosion sfx)
 
