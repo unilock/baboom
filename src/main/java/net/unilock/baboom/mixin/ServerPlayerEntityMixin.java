@@ -32,15 +32,15 @@ public abstract class ServerPlayerEntityMixin extends PlayerEntity {
 
 		ArrayList<String> targetUuids = config.targetUuids;
 
-		if (targetUuids.contains(uuid)) {
+		if (targetUuids.isEmpty() || targetUuids.contains(uuid)) {
 
 			World world = player.world;
 			Identifier worldValue = world.getRegistryKey().getValue();
 			String dimension = worldValue.getNamespace() + ":" + worldValue.getPath();
 
-			String targetDimension = config.targetDimension;
+			ArrayList<String> targetDimensions = config.targetDimensions;
 
-			if (targetDimension.isBlank() || dimension.equals(targetDimension)) {
+			if (targetDimensions.isEmpty() || targetDimensions.contains(dimension)) {
 				double x = player.getX();
 				double y = player.getY();
 				double z = player.getZ();

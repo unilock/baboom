@@ -5,15 +5,15 @@
 `baboom.json`:
 ```json5
 {
-  // Comma-separated UUIDs of explosive players.
+  // Comma-separated UUID(s) of explosive players. Blank for all.
   // Example: "123e4567-e89b-12d3-a456-426614174000"
   // (you'll need to set this manually after starting the game once, sorry!)
-  targetUuids: ["uuid-one","uuid-two","..."],
+  "targetUuids": ["uuid-one","uuid-two","..."],
 
-  // Dimension in which the player will explode. Blank for any.
+  // Comma-separated dimension(s) in which the player(s) will explode. Blank for any.
   // Format: "namespace:path"
-  // Default: "minecraft:the_nether"
-  "targetDimension": "minecraft:the_nether",
+  // Default: ["minecraft:the_nether"]
+  "targetDimensions": ["minecraft:the_nether"],
 
   // Whether the explosion creates fire.
   // Default: true

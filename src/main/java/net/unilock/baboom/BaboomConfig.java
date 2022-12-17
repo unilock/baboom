@@ -12,15 +12,18 @@ import java.util.function.Supplier;
 
 public class BaboomConfig {
     public ArrayList<String> targetUuids;
-    public String targetDimension;
+    public ArrayList<String> targetDimensions;
     public boolean createFire;
     public float explosionPower;
 
     public BaboomConfig() {
         this.targetUuids = new ArrayList<>();
-        this.targetDimension = "minecraft:the_nether";
+        this.targetDimensions = new ArrayList<>();
         this.createFire = true;
         this.explosionPower = 4.0F;
+
+        targetUuids.add("123e4567-e89b-12d3-a456-426614174000");
+        targetUuids.add("minecraft:the_nether");
     }
 
     public static final Gson GSON = new GsonBuilder()
