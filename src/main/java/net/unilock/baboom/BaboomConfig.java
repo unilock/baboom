@@ -23,7 +23,7 @@ public class BaboomConfig {
         this.explosionPower = 4.0F;
 
         targetUuids.add("123e4567-e89b-12d3-a456-426614174000");
-        targetUuids.add("minecraft:the_nether");
+        targetDimensions.add("minecraft:the_nether");
     }
 
     public static final Gson GSON = new GsonBuilder()
