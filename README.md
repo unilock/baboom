@@ -7,7 +7,6 @@
 {
   // Comma-separated UUID(s) of explosive players. Blank for all.
   // Example: "123e4567-e89b-12d3-a456-426614174000"
-  // (you'll need to set this manually after starting the game once, sorry!)
   "targetUuids": ["uuid-one","uuid-two","..."],
 
   // Comma-separated dimension(s) in which the player(s) will explode. Blank for any.
@@ -20,6 +19,7 @@
   "createFire": true,
 
   // Explosion power.
+  // Examples:
   // - TNT = 4.0
   // - Wither spawn = 7.0
   // Default: 4.0
